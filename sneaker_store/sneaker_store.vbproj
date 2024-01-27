@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25D55B3F-AABC-4E9B-859C-80C072E57291}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sneaker_store.My.MyApplication</StartupObject>
+    <RootNamespace>sneaker_store</RootNamespace>
+    <AssemblyName>sneaker_store</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Stock Management</ProductName>
+    <PublisherName>Engin Smith</PublisherName>
+    <SuiteName>EnginSmith</SuiteName>
+    <MinimumRequiredVersion>1.0.0.2</MinimumRequiredVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sneaker_store.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sneaker_store.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>store.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5B36E9D221DAB62CCAF1DB412AAC03FDDB7683FA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>stock_management_ver.0.0.1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna UI Activation\Guna UI Activation\bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\New folder\framwork-main\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="child\expenses\expenses.Designer.vb">
+      <DependentUpon>expenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\expenses\expenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\expenses\table_expense.Designer.vb">
+      <DependentUpon>table_expense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\expenses\table_expense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\expenses\tbl_extype.Designer.vb">
+      <DependentUpon>tbl_extype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\expenses\tbl_extype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\products\products.Designer.vb">
+      <DependentUpon>products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\products\products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\products\table_category.Designer.vb">
+      <DependentUpon>table_category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\products\table_category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\products\table_product.Designer.vb">
+      <DependentUpon>table_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\products\table_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\products\tbl_brand.Designer.vb">
+      <DependentUpon>tbl_brand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\products\tbl_brand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\report\invoice.Designer.vb">
+      <DependentUpon>invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\report\invoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\report\reporting_form.Designer.vb">
+      <DependentUpon>reporting_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\report\reporting_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\report\table_expense_report.Designer.vb">
+      <DependentUpon>table_expense_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\report\table_expense_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\report\table_sale_report.Designer.vb">
+      <DependentUpon>table_sale_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\report\table_sale_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\report\table_stock_report.Designer.vb">
+      <DependentUpon>table_stock_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\report\table_stock_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\search\search_form.Designer.vb">
+      <DependentUpon>search_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\search\search_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\sell\sales.Designer.vb">
+      <DependentUpon>sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\sell\sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\sell\sales_form.Designer.vb">
+      <DependentUpon>sales_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\sell\sales_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\sell\table_damagedstock.Designer.vb">
+      <DependentUpon>table_damagedstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\sell\table_damagedstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\sell\table_purchase.Designer.vb">
+      <DependentUpon>table_purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\sell\table_purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\sell\table_sell.Designer.vb">
+      <DependentUpon>table_sell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\sell\table_sell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\supplier\suppliers.Designer.vb">
+      <DependentUpon>suppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\supplier\suppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child\supplier\table_supplier.Designer.vb">
+      <DependentUpon>table_supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="child\supplier\table_supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class\IDGenerator.vb" />
+    <Compile Include="db_sneakerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sneakerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modul\DBConnection.vb" />
+    <Compile Include="modul\mdl_product.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reportchild\reportexpense.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportexpense.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportchild\reportInvoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportchild\reportsales.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportsales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportchild\reportstock.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportstock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="son\brand\addnew_brand.Designer.vb">
+      <DependentUpon>addnew_brand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\brand\addnew_brand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\brand\update_brand.Designer.vb">
+      <DependentUpon>update_brand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\brand\update_brand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\category\add_cat.Designer.vb">
+      <DependentUpon>add_cat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\category\add_cat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\category\update_category.Designer.vb">
+      <DependentUpon>update_category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\category\update_category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\damagedstock\addnew_damagedstock.Designer.vb">
+      <DependentUpon>addnew_damagedstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\damagedstock\addnew_damagedstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\damagedstock\updatedamaged.Designer.vb">
+      <DependentUpon>updatedamaged.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\damagedstock\updatedamaged.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\expense type\addnew_extype.Designer.vb">
+      <DependentUpon>addnew_extype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\expense type\addnew_extype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\expense type\update_extype.Designer.vb">
+      <DependentUpon>update_extype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\expense type\update_extype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\expenses\addnew_expenes.Designer.vb">
+      <DependentUpon>addnew_expenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\expenses\addnew_expenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\expenses\update_expense.Designer.vb">
+      <DependentUpon>update_expense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\expenses\update_expense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\product\add_product.Designer.vb">
+      <DependentUpon>add_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\product\add_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\product\update_product.Designer.vb">
+      <DependentUpon>update_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\product\update_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\purchase\addnew_purchase.Designer.vb">
+      <DependentUpon>addnew_purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\purchase\addnew_purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\purchase\purchaseUpdate.Designer.vb">
+      <DependentUpon>purchaseUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\purchase\purchaseUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\sellupdate.Designer.vb">
+      <DependentUpon>sellupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\sellupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\supplier\addnew_supplier.Designer.vb">
+      <DependentUpon>addnew_supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\supplier\addnew_supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son\supplier\update_supplier.Designer.vb">
+      <DependentUpon>update_supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="son\supplier\update_supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="child\expenses\expenses.resx">
+      <DependentUpon>expenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\expenses\table_expense.resx">
+      <DependentUpon>table_expense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\expenses\tbl_extype.resx">
+      <DependentUpon>tbl_extype.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\products\products.resx">
+      <DependentUpon>products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\products\table_category.resx">
+      <DependentUpon>table_category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\products\table_product.resx">
+      <DependentUpon>table_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\products\tbl_brand.resx">
+      <DependentUpon>tbl_brand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\report\invoice.resx">
+      <DependentUpon>invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\report\reporting_form.resx">
+      <DependentUpon>reporting_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\report\table_expense_report.resx">
+      <DependentUpon>table_expense_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\report\table_sale_report.resx">
+      <DependentUpon>table_sale_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\report\table_stock_report.resx">
+      <DependentUpon>table_stock_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\search\search_form.resx">
+      <DependentUpon>search_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\sell\sales.resx">
+      <DependentUpon>sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\sell\sales_form.resx">
+      <DependentUpon>sales_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\sell\table_damagedstock.resx">
+      <DependentUpon>table_damagedstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\sell\table_purchase.resx">
+      <DependentUpon>table_purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\sell\table_sell.resx">
+      <DependentUpon>table_sell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\supplier\suppliers.resx">
+      <DependentUpon>suppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child\supplier\table_supplier.resx">
+      <DependentUpon>table_supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportchild\reportexpense.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportexpense.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportchild\reportInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportInvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportchild\reportsales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportsales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportchild\reportstock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportstock.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\brand\addnew_brand.resx">
+      <DependentUpon>addnew_brand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\brand\update_brand.resx">
+      <DependentUpon>update_brand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\category\add_cat.resx">
+      <DependentUpon>add_cat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\category\update_category.resx">
+      <DependentUpon>update_category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\damagedstock\addnew_damagedstock.resx">
+      <DependentUpon>addnew_damagedstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\damagedstock\updatedamaged.resx">
+      <DependentUpon>updatedamaged.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\expense type\addnew_extype.resx">
+      <DependentUpon>addnew_extype.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\expense type\update_extype.resx">
+      <DependentUpon>update_extype.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\expenses\addnew_expenes.resx">
+      <DependentUpon>addnew_expenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\expenses\update_expense.resx">
+      <DependentUpon>update_expense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\product\add_product.resx">
+      <DependentUpon>add_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\product\update_product.resx">
+      <DependentUpon>update_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\purchase\addnew_purchase.resx">
+      <DependentUpon>addnew_purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\purchase\purchaseUpdate.resx">
+      <DependentUpon>purchaseUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\sellupdate.resx">
+      <DependentUpon>sellupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\supplier\addnew_supplier.resx">
+      <DependentUpon>addnew_supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="son\supplier\update_supplier.resx">
+      <DependentUpon>update_supplier.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db_sneakerDataSet.xsc">
+      <DependentUpon>db_sneakerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_sneakerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sneakerDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sneakerDataSet.xss">
+      <DependentUpon>db_sneakerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="stock_management_ver.0.0.1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pic\bg-log.png" />
+    <None Include="pic\economy.png" />
+    <None Include="pic\box.png" />
+    <None Include="pic\brand-image.png" />
+    <None Include="Resources\5C3FBFB5-EB6D-40BF-BFA5-A902CDFB6E2F.jpeg" />
+    <Content Include="store.ico" />
+    <None Include="packages.config" />
+    <None Include="pic\shopping-cart.png" />
+    <None Include="pic\printer.png" />
+    <None Include="pic\shop.png" />
+    <None Include="pic\search.png" />
+    <None Include="pic\icons-supplier.png" />
+    <None Include="pic\bg-user.png" />
+    <None Include="pic\close.png" />
+    <None Include="pic\icon-back.png" />
+    <None Include="pic\expense.png" />
+    <None Include="pic\brows-pic.png" />
+    <None Include="pic\exclamation.png" />
+    <Content Include="pic\icon-exit %282%29.png" />
+    <Content Include="pic\icon-exit.png" />
+    <None Include="pic\icon-products.png" />
+    <Content Include="pic\icon-profile.png" />
+    <None Include="pic\icon-supplier.png" />
+    <None Include="pic\icon-report.png" />
+    <None Include="pic\icon-search.png" />
+    <None Include="pic\icon-sale.png" />
+    <Content Include="pic\icon-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

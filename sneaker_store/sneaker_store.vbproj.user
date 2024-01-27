@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win64_x64\dotnet\</ReferencePath>
+    <PublishUrlHistory>Publish\|C:\Users\smith\OneDrive\Desktop\Release Project\|\\DESKTOP-4E8EDUP\Users\smith\Desktop\Release Project\|\\DESKTOP-4E8EDUP\Users\smith\OneDrive\Desktop\Release Project\|\Users\smith\OneDrive\Desktop\Release Project\</PublishUrlHistory>
+    <InstallUrlHistory>\\DESKTOP-4E8EDUP\Users\smith\OneDrive\Desktop\Release Project\|\\DESKTOP-4E8EDUP\Users\smith\Desktop\Release Project\</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>\\DESKTOP-4E8EDUP\Users\smith\OneDrive\Desktop\Release Project\</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>
