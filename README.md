@@ -54,6 +54,6 @@ To run tests, run the following to open visual studio
 
 ## Screenshots
 
-![App Screenshot](https://docs.google.com/document/d/e/2PACX-1vQvb261GdUbCtJpy_-rb5FzdMjQ3O-D2ph398oR8eZcMHcCt59FRUGqNQwqbIdAKq8ulJpqzfhiXirv/pub?embedded=true)
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQvb261GdUbCtJpy_-rb5FzdMjQ3O-D2ph398oR8eZcMHcCt59FRUGqNQwqbIdAKq8ulJpqzfhiXirv/pub?embedded=true"></iframe>
+<img src="sneaker store.PNG" width="4000px">
+
 
