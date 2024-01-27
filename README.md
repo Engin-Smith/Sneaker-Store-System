@@ -1,11 +1,14 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png" width="400" alt="Laravel Logo"></a></p>
 
-![Logo](https://www.pngegg.com/en/png-zzrvd)
 
+<h1 align="center">Sneaker Store System</h1>
+<p align="center">
+This project is targeted for the mass Sneaker Store management system around the company or further.
+Sneaker Store management is a very complex process which also need a very efficient management.
+it enhances correctness and reduces man power.
+</p>
 
-#  Sneaker Store System
-
-A brief description of what this project does and who it's for
-## Authors
+## Team Members
 
 - [@Engin-Smith](https://github.com/Engin-Smith)
 
