@@ -12,6 +12,16 @@ it enhances correctness and reduces man power.
 
 - [@Engin-Smith](https://github.com/Engin-Smith)
 
+| Group              | Member                                                               |
+| ----------------- | ------------------------------------------------------------------ |
+|1|  Mao Somith |
+|2|  Leang Panha |
+|3|  Korn Souty |
+|4|  Chon Bunham |
+|5|  NUON SAMBO |
+|6|  Mao Chivorn |
+|7|  Chem Bouna |
+
 ## Features
 
 - Modern GUI
