@@ -12,7 +12,7 @@ it enhances correctness and reduces man power.
 
 - [@Engin-Smith](https://github.com/Engin-Smith)
 
-| Group              | Member                                                               |
+| #              | Member                                                               |
 | ----------------- | ------------------------------------------------------------------ |
 |1|  Mao Somith |
 |2|  Leang Panha |
