@@ -50,7 +50,7 @@ Set Up Database
 ```bash
   Install SqlServer
 ```
-go to directory Modul for connecting to database Example Server name
+go to directory Modul for configuration the connection string to database Example Server name
 
 ```bash
   DESKTOP-UOR27U4
