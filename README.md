@@ -50,6 +50,11 @@ Set Up Database
 ```bash
   Install SqlServer
 ```
+Backup Database By using data source file in directory Database Backup
+
+```bash
+  db_sneaker.bacpac
+```
 go to directory Modul for configuration the connection string to database Example Server name
 
 ```bash
