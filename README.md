@@ -45,6 +45,20 @@ Or just to Download file ZIP
 ```bash
   Download ZIP
 ```
+Set Up Database 
+
+```bash
+  Install SqlServer
+```
+go to directory Modul for connecting to database Example Server name
+
+```bash
+  DESKTOP-UOR27U4
+```
+if sucessful connection you can run and login test with demo account
+```bash
+  username = 123 password = 123
+```
 ## Tech Stack
 
 **Client:** VB.Net
