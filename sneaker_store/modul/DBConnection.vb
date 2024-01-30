@@ -20,7 +20,7 @@ Module DBConnection
     '    sGlobalConnectionString = New OleDb.OleDbConnection(conString)
     'End Sub
 
-    Dim connectionstring As String = "Server=DESKTOP-UOR27U4\SQLEXPRESS;Database=db_sneaker;UID=sa;PWD=123"
+    Dim connectionstring As String = "Server=Your server name;Database=db_sneaker;UID=sa;PWD=123"
     Public con As New SqlConnection(connectionstring)
     Public cnn As New SqlCommand
 End Module
