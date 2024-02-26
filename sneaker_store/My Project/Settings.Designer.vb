@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -57,7 +57,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UOR27U4\SQLEXPRESS;Initial Catalog=db_sneaker;User ID=sa;Pass"& _ 
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HSO5MHQ\SQLEXPRESS;Initial Catalog=db_sneaker;User ID=sa;Pass"& _ 
             "word=123")>  _
         Public ReadOnly Property db_sneaker() As String
             Get
@@ -92,7 +92,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UOR27U4\SQLEXPRESS;Initial Catalog=db_sneaker;Integrated Secu"& _ 
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HSO5MHQ\SQLEXPRESS;Initial Catalog=db_sneaker;Integrated Secu"& _ 
             "rity=True")>  _
         Public ReadOnly Property db_sneakerConnectionString() As String
             Get

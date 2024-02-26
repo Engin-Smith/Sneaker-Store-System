@@ -23,11 +23,13 @@ Public Class main
         'End With
         products.Show()
         Me.Hide()
+        ' is button to show product
     End Sub
 
     Private Sub m_product_Click(sender As Object, e As EventArgs) Handles m_product.Click
         products.Show()
         Me.Hide()
+        ' is button to show product
     End Sub
 
     Private Sub btn_supplier_Click(sender As Object, e As EventArgs) Handles btn_supplier.Click

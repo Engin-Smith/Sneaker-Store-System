@@ -260,6 +260,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_sneakerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_sneakerDataSet.vb">
+      <DependentUpon>db_sneakerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
