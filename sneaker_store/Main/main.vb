@@ -75,6 +75,7 @@ Public Class main
     Private Sub btn_adde_Click(sender As Object, e As EventArgs) Handles btn_adde.Click
         Dim add As New add_cat
         add.ShowDialog()
+        ' This button show to add product.
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
