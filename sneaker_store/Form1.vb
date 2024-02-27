@@ -91,7 +91,7 @@ Public Class Form1
         sqlAD.Fill(dt)
 
         If (dt.Rows.Count > 0) Then
-            'MessageBox.Show("login succee")
+            'MessageBox.Show("login successfull")
             main.Show()
             Me.Hide()
             txt_pass.Text = ""
