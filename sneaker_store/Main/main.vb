@@ -35,6 +35,7 @@ Public Class main
     Private Sub btn_supplier_Click(sender As Object, e As EventArgs) Handles btn_supplier.Click
         suppliers.Show()
         Me.Hide()
+        ' is button to show suppier.
     End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
